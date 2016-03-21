@@ -8,7 +8,7 @@ class SQL {
     mysqli_query($con, $q);
     $q="INSERT INTO things(name) VALUES('Dre')";
     mysqli_query($con, $q);
-    $result = mysql_query("SELECT * FROM users");
+    $result = mysqli_query("SELECT * FROM users");
     #$q="SELECT * FROM users";
     return $$result;
   }
