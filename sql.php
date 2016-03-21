@@ -10,7 +10,7 @@ class SQL {
     mysqli_query($con, $q);
     $q="SELECT * FROM users";
     $result=mysqli_query($con, $q);
-    return $$result;
+    return $result;
   }
 }
 ?>
