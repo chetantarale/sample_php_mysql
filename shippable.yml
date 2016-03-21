@@ -15,5 +15,5 @@ before_script:
   - mysql -e 'create database if not exists test;'
 
 script:
-  - phpunit  --log-junit shippable/testresults/junit.xml --coverage-xml shippable/codecoverage test.php
+  - phpunit test.php
 
