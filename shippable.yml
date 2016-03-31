@@ -9,7 +9,7 @@ services:
   - mysql
 
 before_script: 
-  - sudo service mysql start
+  - service mysql.server start
   - mkdir -p shippable/testresults
   - mkdir -p shippable/codecoverage
   - mysql -e 'create database if not exists test;'
