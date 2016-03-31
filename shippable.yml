@@ -1,4 +1,4 @@
-build_image: chetantarale/u14php7:tip
+build_image: chetantarale/u14php7pls:tip
 
 language: php
 
@@ -9,6 +9,7 @@ services:
   - mysql
 
 before_script: 
+  - sudo service mysql start
   - mkdir -p shippable/testresults
   - mkdir -p shippable/codecoverage
   - mysql -e 'create database if not exists test;'
